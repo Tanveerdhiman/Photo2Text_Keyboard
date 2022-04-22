@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Photo2Text</string>
+    <string name="imageButton">TODO</string>
+    <string name="recognise">Recognise</string>
+    <string name="clear">Clear</string>
+    <string name="x">X</string>
+    <string name="enter">Enter</string>
+    <string name="bg">bg</string>
+    <string name="space">space</string>
+    <string name="backspace">backspace</string>
+</resources>

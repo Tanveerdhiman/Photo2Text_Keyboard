@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:id="@+id/backspace"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="340dp"
+        android:layout_marginBottom="210dp"
+        android:background="@drawable/backspace"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/space"
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="340dp"
+        android:layout_marginBottom="150dp"
+        android:background="@drawable/space"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/enter"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="340dp"
+        android:layout_marginBottom="90dp"
+        android:background="@drawable/ic_keyboard_return_black_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/ClearBtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="340dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/ic_clear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/RecogniseBtn"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="103dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/recognise"
+        app:layout_constraintBottom_toBottomOf="@+id/FrameLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/FrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="460dp"
+        android:background="#000000"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextureView
+            android:id="@+id/textureView2"
+            android:layout_width="340dp"
+            android:layout_height="match_parent" />
+
+        <com.example.photo2text.GraphicOverlay
+            android:id="@+id/graphicOverlay"
+            android:layout_width="340dp"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>
